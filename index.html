@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+       * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+</style>
+</head>
+<body class="joe">
+  <div class="header">
+  <h1 class="hea">Cosmology</h1>
+</div>
+<div class="topnav">
+  <a href="Origin.html">Origin</a>
+  <a href="Contact.html">Contact</a>
+  <a href="Me.html">About me</a>
+</div>
+<p class="my"> Overview </p>
+<button class="accordion fro">Mysteries</button>
+<div class="panel">
+  <p>Cosmologists puzzle over exotic concepts like dark matter and dark energy and whether there is one universe or many (sometimes called the multiverse). While other aspects astronomy deal with individual objects and phenomena or collections of objects, cosmology spans the entire universe from birth to death, with a wealth of mysteries at every stage.</p>
+</div>
+<br>
+<br>
+<button class="accordion fro">History</button>
+<div class="panel">
+  <p>The dawn of the 20th century brought further insights into comprehending the vast universe. Albert Einstein proposed the unification of space and time in his General Theory of Relativity. In the early 1900s, scientists were debating whether the Milky Way contained the whole universe within its span, or whether it was simply one of many collections of stars. Edwin Hubble calculated the distance to a fuzzy nebulous object in the sky and determined that it lay outside of the Milky Way, proving our galaxy to be a small drop in the enormous universe. Using General Relativity to lay the framework, Hubble measured other galaxies and determined that they were rushing away from the us, leading him to conclude that the universe was not static but expanding</p>
+</div>
+<br>
+<br>
+<button class="accordion fro">What is it?</button>
+<div class="panel">
+  <p>The science of the origin and development of the universe. Modern astronomy is dominated by the Big Bang theory, which brings together observational astronomy and particle physics.</p>
+</div>
+<br>
+<br>
+<script src="script.js"></script>
+ <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+</script>
+</body>
+</html>
